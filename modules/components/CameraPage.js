@@ -16,36 +16,38 @@ import {
   MaterialCommunityIcons
 } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
+import * as MediaLibrary from "expo-media-library";
 import Gallery from "./Gallery";
 
 export default class CameraPage extends React.Component {
   constructor(props) {
-    console.log("constructor");
-
     super(props);
     this.state = {
       hasPermission: null,
       cameraType: Camera.Constants.Type.back,
-      photos: []
+      photos: [],
+      viewImageFlag: false,
+      imageURI: null
     };
     this.cameraRef = React.createRef();
   }
   getPermissionAsync = async () => {
     // Camera roll Permission
-    if (Platform.OS === "ios") {
-      const { status } = await Permissions.askAsync(Permissions.CAMERA_ROLL);
-      if (status !== "granted") {
-        alert("Sorry, we need camera roll permissions to make this work!");
-      }
+    const permission1 = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+    if (permission1.status !== "granted") {
+      alert("Sorry, we need camera roll permissions to make this work!");
     }
     // Camera Permission
-    const { status } = await Permissions.askAsync(Permissions.CAMERA);
-    console.log("permission", status);
-    this.setState({ hasPermission: status === "granted" });
+    const permission2 = await Permissions.askAsync(Permissions.CAMERA);
+    await Permissions.askAsync(Permissions.CAMERA_ROLL);
+    this.setState({
+      hasPermission:
+        permission1.status === "granted" && permission2.status === "granted"
+    });
   };
 
   async componentDidMount() {
-    this.getPermissionAsync();
+    await this.getPermissionAsync();
   }
   pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
@@ -62,6 +64,7 @@ export default class CameraPage extends React.Component {
           : Camera.Constants.Type.back
     });
   };
+
   takePicture = async () => {
     let pic = null;
     if (this.cameraRef) {
@@ -69,6 +72,15 @@ export default class CameraPage extends React.Component {
       this.setState({
         photos: [pic, ...this.state.photos]
       });
+      await this.getPermissionAsync();
+      const asset = await MediaLibrary.createAssetAsync(pic.uri);
+      MediaLibrary.createAlbumAsync("Expo", asset)
+        .then(() => {
+          console.log("Album created!");
+        })
+        .catch(error => {
+          console.log("err", error);
+        });
     }
   };
 
@@ -107,7 +119,7 @@ export default class CameraPage extends React.Component {
             <MaterialCommunityIcons
               name="arrow-left-circle"
               style={{
-                fontSize: 40,
+                fontSize: 40
               }}
             />
           </TouchableOpacity>
@@ -140,7 +152,7 @@ export default class CameraPage extends React.Component {
           </TouchableOpacity>
         </View>
         <View>
-          <Gallery captures={photos} />
+          <Gallery captures={photos} handleImageView={this.handleImageView} />
         </View>
       </Camera>
     );

@@ -14,10 +14,15 @@ import {
   Ionicons,
   MaterialCommunityIcons
 } from "@expo/vector-icons";
+import MapView from "react-native-maps";
 export default class LocationPage extends React.Component {
   state = {
     location: null,
-    errorMessage: null
+    errorMessage: null,
+    mapRegion: null
+  };
+  handleMapRegionChange = mapRegion => {
+    this.setState({ mapRegion });
   };
   componentDidMount() {
     if (Platform.OS === "android" && !Constants.isDevice) {
@@ -32,7 +37,6 @@ export default class LocationPage extends React.Component {
   getLocationAsync = async () => {
     try {
       let { status } = await Permissions.askAsync(Permissions.LOCATION);
-      console.log("location status", status);
       if (status !== "granted") {
         this.setState({
           errorMessage: "Permission to access location was denied"
@@ -52,15 +56,12 @@ export default class LocationPage extends React.Component {
   render() {
     let location = null;
     let locationDetails = [];
-    let temp = [1, 2, 3, 4];
     if (this.state.location && this.state.location.coords) {
       location = this.state.location.coords;
-      console.log("location", location);
       for (let key in location) {
-        console.log(key, location[key]);
         locationDetails.push(
           <View key={key} style={styles.locationDetails}>
-            <Text style={styles.lockey}>{key}</Text>
+            <Text style={styles.locKey}>{key}</Text>
             <Text style={styles.locValue}>{location[key]}</Text>
           </View>
         );
@@ -95,6 +96,33 @@ export default class LocationPage extends React.Component {
             {locationDetails}
           </>
         )}
+        {location && (
+          <MapView
+            style={{ alignSelf: "stretch", height: 400 }}
+            initialRegion={this.state.mapRegion}
+            onRegionChange={this.handleMapRegionChange}
+          >
+            <MapView.Marker
+              coordinate={{
+                latitude: location.latitude + 0.0005 || -36.82339,
+                longitude: location.longitude + 0.0005 || -73.03569
+              }}
+            >
+              <View>
+                <Text style={{ color: "#000" }}>
+                  <MaterialCommunityIcons
+                    name="map-marker"
+                    style={{
+                      color: "red",
+                      fontSize: 40,
+                      textAlign: "left"
+                    }}
+                  />
+                </Text>
+              </View>
+            </MapView.Marker>
+          </MapView>
+        )}
       </View>
     );
   }
@@ -104,8 +132,7 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
     height: "100%",
     width: "100%",
-    backgroundColor: "#ecf0f1",
-    
+    backgroundColor: "#ecf0f1"
   },
   paragraph: {
     margin: 24,
@@ -115,15 +142,14 @@ const styles = StyleSheet.create({
   locationDetails: {
     flexDirection: "row",
     width: "100%",
-    padding: 15
+    padding: 5
   },
-  lockey: {
+  locKey: {
     textAlign: "left",
     width: "50%"
   },
   locValue: {
     textAlign: "center",
-    // backgroundColor:"blue",
     width: "50%"
   }
 });

@@ -9,11 +9,13 @@ import {
 } from "react-native";
 import CameraPage from "./modules/components/CameraPage";
 import LocationPage from "./modules/components/LocationPage";
+// import LocationMap from "./modules/components/LocationMap";
 import {
   FontAwesome,
   Ionicons,
   MaterialCommunityIcons
 } from "@expo/vector-icons";
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -21,9 +23,6 @@ export default class App extends React.Component {
       cameraFlag: false,
       locationFlag: false
     };
-  }
-  componentDidMount() {
-    console.log("reload");
   }
   handleCameraClose = () => {
     this.setState({
@@ -47,6 +46,7 @@ export default class App extends React.Component {
       return (
         <View style={styles.container}>
           <LocationPage handleLocationClose={this.handleLocationClose} />
+          {/* <LocationMap handleLocationClose={this.handleLocationClose} /> */}
         </View>
       );
     }
