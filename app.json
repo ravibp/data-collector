@@ -27,6 +27,9 @@
       "supportsTablet": true
     },
     "description": "",
-    "githubUrl": "https://github.com/ravibp/data-collector"
-  }
+    "githubUrl": "https://github.com/ravibp/data-collector",
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "data-collector App",
+  "name": "dataapp"
 }
