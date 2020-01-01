@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
-INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
-INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
-INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
+INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
+INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
+INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:react-native-screens] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
@@ -91,20 +92,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ravibp\.
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\560334875e24142246cbe7489a6587d1\AndroidManifest.xml:17:1-22:12
 MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3a4b3abad1c6876a945a9630f6fbb8bd\AndroidManifest.xml:2:1-30:12
 MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-fbcore-2.0.0.aar\3b4621b663cbc621648dafb1bef9a2b1\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
-INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
-INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
+INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
+INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
+INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
 	package
 		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:2:5-26
 		INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
 		INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-53:12
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:1-55:12
 		INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -124,80 +125,94 @@ MERGED from [com.google.android:cameraview:1.0.0] C:\Users\ravibp\.gradle\caches
 MERGED from [com.google.android:cameraview:1.0.0] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-cameraview-1.0.0.aar\ed385ad3402ddba28ac4e04355adabce\AndroidManifest.xml:23:5-65
 	android:name
 		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:6:22-62
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:7:5-68
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:7:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:8:5-74
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-74
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:8:22-71
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:9:5-80
 MERGED from [:expo-file-system] C:\ravi work\react native\exponew\data-collector\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
 MERGED from [:expo-file-system] C:\ravi work\react native\exponew\data-collector\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:7:22-77
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:9:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:10:5-81
 MERGED from [:expo-file-system] C:\ravi work\react native\exponew\data-collector\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
 MERGED from [:expo-file-system] C:\ravi work\react native\exponew\data-collector\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:10:22-78
 uses-permission#android.permission.MANAGE_DOCUMENTS
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:10:5-75
-	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:10:22-72
-uses-permission#android.permission.READ_INTERNAL_STORAGE
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:11:5-80
-	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:11:22-77
-uses-permission#android.permission.READ_PHONE_STATE
 ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:12:5-75
 	android:name
 		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:12:22-72
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:13:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:14:5-75
+	android:name
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:14:22-72
 uses-permission#android.permission.USE_FINGERPRINT
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:13:5-74
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:15:5-74
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:13:22-71
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:15:22-71
 uses-permission#android.permission.VIBRATE
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:14:5-66
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:16:5-66
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:14:22-63
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:16:22-63
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:15:5-80
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:17:5-80
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:15:22-77
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:17:22-77
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:17:5-81
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:19:5-81
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
 MERGED from [:expo-location] C:\ravi work\react native\exponew\data-collector\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
 MERGED from [:expo-location] C:\ravi work\react native\exponew\data-collector\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
 MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3a4b3abad1c6876a945a9630f6fbb8bd\AndroidManifest.xml:12:5-81
 MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3a4b3abad1c6876a945a9630f6fbb8bd\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:17:22-78
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:19:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:18:5-79
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:20:5-79
 MERGED from [:expo-location] C:\ravi work\react native\exponew\data-collector\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
 MERGED from [:expo-location] C:\ravi work\react native\exponew\data-collector\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-79
 MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3a4b3abad1c6876a945a9630f6fbb8bd\AndroidManifest.xml:14:5-79
 MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-library-3.2.11.aar\3a4b3abad1c6876a945a9630f6fbb8bd\AndroidManifest.xml:14:5-79
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:18:22-76
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:20:22-76
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:20:5-72
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:22:5-72
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:20:22-69
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:22:22-69
 uses-permission#android.permission.READ_CALENDAR
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:21:5-72
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:23:5-72
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:21:22-69
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:23:22-69
 uses-permission#android.permission.WRITE_CALENDAR
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:22:5-73
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:24:5-73
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:22:22-70
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:24:22-70
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:24:5-71
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:26:5-71
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:24:22-68
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:26:22-68
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:26:5-73
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:28:5-73
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:26:22-70
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:28:22-70
 application
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:29:5-51:19
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:31:5-53:19
 MERGED from [com.google.android:cameraview:1.0.0] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-cameraview-1.0.0.aar\ed385ad3402ddba28ac4e04355adabce\AndroidManifest.xml:32:5-20
 MERGED from [com.google.android:cameraview:1.0.0] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\jetified-cameraview-1.0.0.aar\ed385ad3402ddba28ac4e04355adabce\AndroidManifest.xml:32:5-20
 MERGED from [:expo-image-picker] C:\ravi work\react native\exponew\data-collector\node_modules\expo-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-23:19
@@ -235,51 +250,53 @@ MERGED from [io.nlopez.smartlocation:library:3.2.11] C:\Users\ravibp\.gradle\cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\ravibp\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\ffcf6d61ac472d126552bc79aa142c01\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:31:7-39
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:33:7-39
 	android:roundIcon
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:33:7-52
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:35:7-52
 	android:icon
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:32:7-41
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:34:7-41
 	android:allowBackup
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:34:7-34
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:36:7-34
 	android:theme
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:35:7-38
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:37:7-38
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:30:7-38
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:32:7-38
 activity#com.dataapp.MainActivity
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:36:7-45:18
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:38:7-47:18
 	android:label
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:38:9-41
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:40:9-41
 	android:windowSoftInputMode
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:40:9-51
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:42:9-51
 	android:configChanges
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:39:9-79
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:41:9-79
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:37:9-37
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:39:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:41:9-44:25
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:43:9-46:25
 action#android.intent.action.MAIN
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:42:13-65
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:44:13-65
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:42:21-62
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:44:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:43:13-73
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:45:13-73
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:43:23-70
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:45:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:46:7-84
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:48:7-84
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:46:17-81
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:48:17-81
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:47:7-50:18
+ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:49:7-52:18
 	android:theme
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:49:9-52
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:51:9-52
 	android:name
-		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:48:9-72
+		ADDED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml:50:9-72
 uses-sdk
 INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\ravi work\react native\exponew\data-collector\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-bluetooth-serial-next] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-bluetooth-serial-next\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] C:\ravi work\react native\exponew\data-collector\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41

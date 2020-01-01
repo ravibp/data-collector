@@ -1,4 +1,4 @@
-#Wed Jan 01 19:55:41 IST 2020
+#Wed Jan 01 21:15:54 IST 2020
 base.0=C\:\\ravi work\\react native\\exponew\\data-collector\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.1=classes.dex
 renamed.1=classes2.dex

@@ -1,52 +1,52 @@
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Button,
-  TouchableOpacity,
-  Image
-} from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import CameraPage from "./modules/components/CameraPage";
 import LocationPage from "./modules/components/LocationPage";
+import Bluetooth from "./modules/components/Bluetooth";
 // import LocationMap from "./modules/components/LocationMap";
-import {
-  FontAwesome,
-  Ionicons,
-  MaterialCommunityIcons
-} from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       cameraFlag: false,
+      bluetoothFlag: false,
       locationFlag: false
     };
   }
-  handleCameraClose = () => {
+  handlePageClose = flag => {
     this.setState({
-      cameraFlag: false
+      [flag]: false
     });
   };
-  handleLocationClose = () => {
-    this.setState({
-      locationFlag: false
-    });
-  };
+
   render() {
     if (this.state.cameraFlag) {
       return (
         <View style={{ flex: 1 }}>
-          <CameraPage handleCameraClose={this.handleCameraClose} />
+          <CameraPage
+            handlePageClose={this.handlePageClose.bind(this, "cameraFlag")}
+          />
         </View>
       );
     }
     if (this.state.locationFlag) {
       return (
         <View style={styles.container}>
-          <LocationPage handleLocationClose={this.handleLocationClose} />
-          {/* <LocationMap handleLocationClose={this.handleLocationClose} /> */}
+          <LocationPage
+            handlePageClose={this.handlePageClose.bind(this, "locationFlag")}
+          />
+          {/* <LocationMap  handlePageClose={this.handlePageClose.bind(this, 'locationFlag')} /> */}
+        </View>
+      );
+    }
+    if (this.state.bluetoothFlag) {
+      return (
+        <View style={{ flex: 1 }}>
+          <Bluetooth
+            handlePageClose={this.handlePageClose.bind(this, "bluetoothFlag")}
+          />
         </View>
       );
     }
@@ -88,6 +88,23 @@ export default class App extends React.Component {
             />
             <Text style={styles.buttonText}>Get Location</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              this.setState({
+                bluetoothFlag: true
+              });
+            }}
+          >
+            <MaterialCommunityIcons
+              name="bluetooth"
+              style={{
+                fontSize: 40,
+                textAlign: "center"
+              }}
+            />
+            <Text style={styles.buttonText}>Bluetooth</Text>
+          </TouchableOpacity>
         </View>
       </>
     );
@@ -107,7 +124,7 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 10,
     fontWeight: "bold",
-    color: "red",
+    color: "red"
   },
   buttonText: {
     textAlign: "center"

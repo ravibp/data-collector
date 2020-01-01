@@ -72,7 +72,7 @@ export default class LocationPage extends React.Component {
       <View style={styles.container}>
         <TouchableOpacity
           style={styles.button}
-          onPress={this.props.handleLocationClose}
+          onPress={this.props.handlePageClose}
         >
           <MaterialCommunityIcons
             name="arrow-left-circle"
@@ -96,7 +96,7 @@ export default class LocationPage extends React.Component {
             {locationDetails}
           </>
         )}
-        {location && (
+        {/* {location && (
           <MapView
             style={{ alignSelf: "stretch", height: 400 }}
             initialRegion={this.state.mapRegion}
@@ -122,7 +122,7 @@ export default class LocationPage extends React.Component {
               </View>
             </MapView.Marker>
           </MapView>
-        )}
+        )} */}
       </View>
     );
   }

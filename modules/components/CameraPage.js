@@ -112,14 +112,17 @@ export default class CameraPage extends React.Component {
           <TouchableOpacity
             style={{
               position: "absolute",
-              left: 0
+              left: 0,
+              top: 0,
+              color: 'white'
             }}
-            onPress={this.props.handleCameraClose}
+            onPress={this.props.handlePageClose}
           >
             <MaterialCommunityIcons
               name="arrow-left-circle"
               style={{
-                fontSize: 40
+                fontSize: 40,
+                color: 'white'
               }}
             />
           </TouchableOpacity>

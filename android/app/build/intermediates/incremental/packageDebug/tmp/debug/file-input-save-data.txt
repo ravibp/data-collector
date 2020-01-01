@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jan 01 19:55:45 IST 2020
+#Wed Jan 01 21:15:56 IST 2020
 56.path=lib/arm64-v8a/libnative-filters.so
 5.base=C\:\\ravi work\\react native\\exponew\\data-collector\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 42.base=C\:\\ravi work\\react native\\exponew\\data-collector\\android\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
